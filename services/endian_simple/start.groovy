@@ -17,6 +17,7 @@ if(EndianUTM.exists()){
                 EndianUTM.eachLine
                 {
                         line_endian -> def endian = line_endian.split('=')
+                        println "line endian= ${line_endian}"
                         settings.eachLine
                         {
                                 line_settings ->

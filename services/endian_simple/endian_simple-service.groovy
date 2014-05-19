@@ -13,7 +13,7 @@ service {
 	maxAllowedInstances	1
 
 	compute {
-		template "SMALL_LINUX"
+		template "ENDIAN_UTM"
 		//template "MEDIUM_LINUX"
 	}
 
