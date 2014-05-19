@@ -22,6 +22,7 @@ service {
 		startDetectionTimeoutSecs 240
 		startDetection {
 			return ServiceUtils.isPortOccupied(80)
-		}
-        }
+	 	}
+		preStop "stop.groovy"
+    }
 }
