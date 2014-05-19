@@ -8,7 +8,11 @@ File EndianUTM = new File("EndianUTM.config")
 
 if(EndianUTM.exists()){
         File settings = new File("/var/efw/ethernet/settings")
-		if(!settings.exists()) settings.createNewFile()
+		if(!settings.exists()) {
+			File dir = new File("/var/efw/ethernet")
+			if(!dir.exists()) dir.mkdirs()
+			settings.createNewFile()
+		}
         if(settings.exists()){
                 EndianUTM.eachLine
                 {
@@ -103,7 +107,11 @@ if(EndianUTM.exists()){
 
 if(EndianUTM.exists()){
         File settings2 = new File("/var/efw/uplinks/main/settings")
-		if(!settings2.exists()) settings2.createNewFile()
+		if(!settings2.exists()) {
+			File dir = new File("/var/efw/uplinks/main")
+			if(!dir.exists()) dir.mkdirs()
+			settings2.createNewFile()
+		}
         if(settings2.exists()){
                 EndianUTM.eachLine
                 {
@@ -161,7 +169,11 @@ if(EndianUTM.exists()){
 
 if(EndianUTM.exists()){
         File settings3 = new File("/var/efw/host/settings")
-		if(!settings3.exists()) settings3.createNewFile()
+		if(!settings3.exists()) {
+			File dir = new File("/var/efw/host")
+			if(!dir.exists()) dir.mkdirs()
+			settings3.createNewFile()
+		}
         if(settings3.exists()){
                 EndianUTM.eachLine
                 {
