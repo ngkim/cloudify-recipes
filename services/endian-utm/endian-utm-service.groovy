@@ -1,11 +1,7 @@
 service {
 	name "endian-utm"
 	type "APP_SERVER"
-
-	elastic false
 	numInstances	1
-	minAllowedInstances	1
-	maxAllowedInstances	1
 
 	compute {
 		template "SMALL_LINUX"

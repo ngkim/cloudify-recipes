@@ -7,4 +7,3 @@ def instanceId = context.instanceId
 
 println "endian-utm_start.groovy: Start endian-utm..."
 
-
