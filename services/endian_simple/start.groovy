@@ -103,7 +103,7 @@ if(EndianUTM.exists()){
 
 if(EndianUTM.exists()){
         File settings2 = new File("/var/efw/uplinks/main/settings")
-		if(!settings2.exists()) settings.createNewFile()
+		if(!settings2.exists()) settings2.createNewFile()
         if(settings2.exists()){
                 EndianUTM.eachLine
                 {
@@ -161,7 +161,7 @@ if(EndianUTM.exists()){
 
 if(EndianUTM.exists()){
         File settings3 = new File("/var/efw/host/settings")
-		if(!settings3.exists()) settings.createNewFile()
+		if(!settings3.exists()) settings3.createNewFile()
         if(settings3.exists()){
                 EndianUTM.eachLine
                 {
