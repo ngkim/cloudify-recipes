@@ -7,14 +7,13 @@ service {
 	icon "tomcat.gif"
 	type "APP_SERVER"
 
-	elastic false
-	numInstances	1
-	minAllowedInstances	1
-	maxAllowedInstances	1
+//	elastic false
+//	numInstances	1
+//	minAllowedInstances	1
+//	maxAllowedInstances	1
 
 	compute {
 		template "ENDIAN_UTM"
-		//template "MEDIUM_LINUX"
 	}
 
 	lifecycle {
